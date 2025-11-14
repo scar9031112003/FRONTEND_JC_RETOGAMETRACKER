@@ -9,6 +9,7 @@ app.use(express.json());
 // Ejemplo de ruta API
 app.get('/api/saludo', (req, res) => {
   res.json({ mensaje: '¡Hola desde el servidor Express!' });
+  
 });
 
 // Iniciar servidor
