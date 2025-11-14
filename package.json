@@ -2,8 +2,11 @@
   "name": "projectjc",
   "private": true,
   "scripts": {
-    "start": "npm run server & npm run client",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm start",
     "client": "cd mi-app && npm run dev"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
   }
 }
